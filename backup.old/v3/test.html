@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Pulse</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/sectionOne.css">
+        <link rel="stylesheet" type="text/css" href="css/particles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
+        
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.3.1/trianglify.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+
+<body>
+    
+    <nav>
+        <div class="navigation" role="navigation">
+            <div class="nav-bar">
+                <div class="mobile-icon">.</div>
+                <ul>
+                    <li><a  id="navHome" class="nav-text">Home</a></li>
+                    <li><a  id="navAbout" class="nav-text">What is Pulse</a></li>
+                    <li><a  href="#" class="nav-text">Menu3</a></li>
+                    <li><a href="#" class="nav-text">Menu4</a></li>
+                    <li><a  href="#" class="nav-text">Sign Up</a></li>
+                </ul>
+           </div>
+        </div>
+    </nav>
+
+    <!-- section 1 -->
+    
+    <div id="particles-js">
+        <div class="title-wrapper">
+            <video  id="bgvid" autoplay muted loop>
+            <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+          <source src="vid/concert2.mp4" type="video/webm">
+          </video>
+            <h1 id="pm" class="hidden textShadow unselectable">Pulse<span>Music</span></h1>
+            <h2 id="slogan" class="hidden textShadow unselectable">A new way to listen</h2>
+            <h3 id="subHead" class="hidden">Sign up to our mailing list!</h3>
+            <button id="subscribe" class="hidden subButton">Subscribe</button>
+           
+
+        </div>
+    </div>
+   
+
+    <script src="javascript/sectionOne.js"></script> 
+
+    <!-- particles.js lib (JavaScript CodePen settings): https://github.com/VincentGarreau/particles.js -->
+    <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+    <script src='https://threejs.org/examples/js/libs/stats.min.js'></script>
+    <script src="javascript/particles.js"></script>
+    <script src="javascript/index.js"></script>
+
+    
+    <div id="about">
+        <div id="whatIs">
+        <h1 class="aboutHeader">What is Pulse?</h1>
+
+        <h3 class="aboutHeader">Pulse is the best way to listen to music. Seamlessly switch between local songs and videos to streamed songs.
+            <br>Whether you want to discover new artists or play your own music, Pulse can do it all.</h3>
+        <h3 class="aboutHeader">Pulse is also a platform for music artists. Simply upload your songs on the website, 
+            <br>wait for approval and your song will instantly directly be promoted to listeners. Artists will get in depth feedback on how your songs are doing and much more.</h3>
+            <!--<br><br>Never again will your music get lost in the crowd.</h3>-->
+        <br>
+        <br>
+        <br>
+        
+        </div>
+        <div id="why">
+            <h1 class="aboutHeader">Why Pulse?</h1>
+            
+            <!----------SLIDER---------->
+            <div class="slider">
+            <div class="slide_viewer">
+              <div class="slide_group">
+                <div class="slide">
+                    <i class="material-icons md-100 black">attach_money</i>
+                </div>
+                <div class="slide">
+                </div>
+              </div>
+            </div>
+          </div><!-- End // .slider -->
+
+          <div class="slide_buttons">
+          </div>
+
+          <div class="directional_nav">
+            <div class="previous_btn" title="Previous">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="65px" height="65px" viewBox="-11 -11.5 65 66">
+                <g>
+                  <g>
+                    <path fill="#474544" d="M-10.5,22.118C-10.5,4.132,4.133-10.5,22.118-10.5S54.736,4.132,54.736,22.118
+                                  c0,17.985-14.633,32.618-32.618,32.618S-10.5,40.103-10.5,22.118z M-8.288,22.118c0,16.766,13.639,30.406,30.406,30.406 c16.765,0,30.405-13.641,30.405-30.406c0-16.766-13.641-30.406-30.405-30.406C5.35-8.288-8.288,5.352-8.288,22.118z"/>
+                    <path fill="#474544" d="M25.43,33.243L14.628,22.429c-0.433-0.432-0.433-1.132,0-1.564L25.43,10.051c0.432-0.432,1.132-0.432,1.563,0	c0.431,0.431,0.431,1.132,0,1.564L16.972,21.647l10.021,10.035c0.432,0.433,0.432,1.134,0,1.564	c-0.215,0.218-0.498,0.323-0.78,0.323C25.929,33.569,25.646,33.464,25.43,33.243z"/>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="next_btn" title="Next">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="65px" height="65px" viewBox="-11 -11.5 65 66">
+                <g>
+                  <g>
+                    <path fill="#474544" d="M22.118,54.736C4.132,54.736-10.5,40.103-10.5,22.118C-10.5,4.132,4.132-10.5,22.118-10.5	c17.985,0,32.618,14.632,32.618,32.618C54.736,40.103,40.103,54.736,22.118,54.736z M22.118-8.288	c-16.765,0-30.406,13.64-30.406,30.406c0,16.766,13.641,30.406,30.406,30.406c16.768,0,30.406-13.641,30.406-30.406 C52.524,5.352,38.885-8.288,22.118-8.288z"/>
+                    <path fill="#474544" d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 			L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z"/>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+            
+        </div>
+        <!--<div class='window'>
+          <div class='overlay'></div>
+          <div class='content'>
+            <div class='welcome'>Sign up now!</div>
+            <div class='subtitle'>Subscribe to our mailing list to get up to date details about the development of Pulse</div>
+            <form action="//pulsemusic.us15.list-manage.com/subscribe/post?u=67b4e15ea5d409e9f85355813&amp;id=6ac8e3d136" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+
+            <div class='input-fields'>
+
+              <input type='email' placeholder='Email' name="EMAIL" value="" id="mce-EMAIL" class='input-line full-width'/>
+              <input type='text' placeholder='First Name' value="" name="FNAME" id="mce-FNAME" class='input-line full-width'/>
+              <input type='text' placeholder='Last Name' value="" name="LNAME"  id="mce-LNAME" class='input-line full-width'/>
+
+            </div>
+            <div class='spacing'>or continue with <span class='highlight'>Facebook</span></div>
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_67b4e15ea5d409e9f85355813_6ac8e3d136" tabindex="-1" value=""></div>
+            <div><button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class='ghost-round full-width'>Subscribe</button></div>
+            </form>
+          </div>
+        </div>
+    </div>
+    <!--<div class="test"> </div>-->
+    </div>
+       
+     <!--<div id="mc_embed_signup" class="signup mc-field-group">
+            <form action="//pulsemusic.us15.list-manage.com/subscribe/post?u=67b4e15ea5d409e9f85355813&amp;id=6ac8e3d136" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <h3 id="subHead" class="hidden">Sign up for the Pulse Newsletter!  </h3>
+                 <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div> 
+                    <input type="email" value="" id="mce-EMAIL" name="EMAIL" class="required email hidden sectionSub" placeholder="Email Address"/>
+                      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_67b4e15ea5d409e9f85355813_6ac8e3d136" tabindex="-1" value=""></div>
+                <label id="signupLabel" for="signupType">I am an</label>
+                <select name="MMERGE1" class="required sectionSub" id="mce-MMERGE">
+                  <option value="Artist">Artist</option>
+                  <option value="Listener">Listener</option>
+                </select>
+                
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="hidden sectionSub button">
+            </form>
+            </div>-->
+    <script type="text/javascript">
+     /*     // set up the base pattern
+        var pattern = Trianglify({
+          height: window.innerHeight-250,
+          width: window.innerWidth,
+          x_colors: ['#2b2e4a', '#252840', '#53354a', '#252840', '#2b2e4a'],
+          y_colors: ['#2b2e4a', '#252840', '#53354a', '#252840', '#2b2e4a'],
+          variance: 10,
+          seed: '666',
+          cell_size: 160});
+
+        // svg
+        document.body.appendChild(pattern.svg());
+
+        $('.test').css('width', window.innerWidth);
+        $('.test').css('height', '25vh');
+
+
+        var time = 0,
+            $paths = $('body').find('svg').find('path'),
+            pathCollection = $paths.get(),
+            count = $paths.length;
+*/
+        </script>
+</body>
+</html>

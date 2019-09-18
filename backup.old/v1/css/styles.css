@@ -1,0 +1,224 @@
+/**
+* Daily UI :: 001
+* Design a sign up page, modal, form, app screen, etc.
+**/
+/**
+* Style Declarations
+**/
+html, body {
+  height: 100%;
+}
+
+body { 
+   background: url("../images/bg.jpg");
+   background-size: cover;
+   
+   overflow-x: hidden;
+   background-attachment: fixed;
+   font-family: 'Lato', sans-serif;
+   -moz-transform: scale(0.85, 0.85); /* Moz-browsers */
+    zoom: 0.85; /* Other non-webkit browsers */
+    zoom: 85%; /* Webkit browsers */
+}
+
+h1, h2, p {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+}
+
+
+.header{
+    padding-bottom: 30px;
+}
+#page-wrapper { 
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+#page-wrapper #modal-wrapper {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+#modal {
+  margin: 0 auto;
+  box-shadow: 0px 34px 27px rgba(0, 0, 0, 0.32), inset 0 0 1px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  background: white;
+}
+
+.box {
+  background: #5c5c5c;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjM2I4Njg2IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzc5YmQ5YSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -webkit-linear-gradient(-45deg, #5c5c5c 0%, #333333 100%);
+  background: -webkit-linear-gradient(315deg, #5c5c5c 0%, #333333 100%);
+  background: linear-gradient(135deg, #5c5c5c 0%, #333333 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF3B8686', endColorstr='#FF79BD9A',GradientType=1 );
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+.box .box-header {
+  font-size: 1.75em;
+  font-weight: 300;
+  color: white;
+  text-align: left;
+  margin: 0 0 36px;
+  z-index: 10;
+}
+.question{
+  font-size: 1.75em;
+  font-weight: 200;
+  color: white;
+  margin-bottom: -15px;
+  text-align: center;
+  z-index: 10;
+}
+.box svg {
+  fill: white;
+}
+
+button.proceed {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  color: white;
+  background: #765cbd;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjM2I4Njg2IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBiNDg2YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -webkit-linear-gradient(-45deg, #765cbd 0%, #59468f 100%);
+  background: -webkit-linear-gradient(315deg, #765cbd 0%, #59468f 100%);
+  background: linear-gradient(135deg, #765cbd 0%, #59468f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#765cbd', endColorstr='#59468f',GradientType=1 );
+  border: 0;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif; 
+  cursor: pointer;
+  z-index: 10;
+}
+button.proceed i {
+  font-size: .8em;
+}
+
+#login-form {
+  padding: 40px;
+}
+#login-form input {
+  border: 1px solid #ddd;
+  color: #79bd9a;
+}
+#login-form label {
+  color: #777777;
+}
+
+#register-form input {
+  border: 1px solid white;
+  color: #eeeeee;
+}
+
+#register-form label {
+  color: white;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin: 20px 0 6px;
+  font-family: 'Lato', sans-serif;
+}
+label:first-child {
+  margin-top: 0;
+}
+label .tip {
+  float: right;
+  font-size: 13px;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #3B8686;
+  font-weight: bold;
+}
+
+input, textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-size: 1em;
+  background: transparent;
+}
+textarea{
+    margin-bottom: -15px;
+    resize: none;
+}
+
+#toggle-tabs {
+  display: table;
+  width: 100%;  
+  background: #765cbd;
+  background: -webkit-linear-gradient(-45deg, #765cbd 0%, #59468f 100%);
+  background: -webkit-linear-gradient(315deg, #765cbd 0%, #59468f 100%);
+  background: linear-gradient(135deg, #765cbd 0%, #59468f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#765cbd', endColorstr='#59468f',GradientType=1 );
+}
+#toggle-tabs .tab {
+  font-size: 1em;
+  display: table-cell;
+  width: 50%;
+  padding: 20px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+}
+
+#toggle-tabs .tab#toggle-user {
+  border: 2px solid #5c5c5c;;
+  color: white;
+  background: #454545;
+}
+
+#toggle-tabs .tab#toggle-artist {
+  border: 2px solid #5c5c5c;
+  color: white;
+  background: #454545;
+}
+
+#toggle-tabs .tab#back-button {
+  border: 2px solid #5c5c5c;
+  color: white;
+  background: #454545;
+}
+
+#toggle-tabs .tab#signup {
+  color: white;
+  background: #765cbd;
+  background: -webkit-linear-gradient(-45deg, #765cbd 0%, #59468f 100%);
+  background: -webkit-linear-gradient(315deg, #765cbd 0%, #59468f 100%);
+  background: linear-gradient(135deg, #765cbd 0%, #59468f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#765cbd', endColorstr='#59468f',GradientType=1 );
+  
+  font-size: 1em;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif; 
+  cursor: pointer;
+  z-index: 10;
+}
+
+.selected{
+   opacity: 0.5;
+   transition: opacity 0.4s;
+}
+
+#branding-small {
+  position: absolute;
+  top: 36px;
+  right: 36px;
+}
+#branding-small svg {
+  fill: white;
+}

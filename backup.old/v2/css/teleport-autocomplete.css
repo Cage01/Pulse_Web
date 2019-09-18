@@ -1,0 +1,59 @@
+/*! teleport-autocomplete - v0.3.3 | https://github.com/teleport/autocomplete#readme | MIT */
+
+
+.tp-ac__list {
+  position: absolute;
+  z-index: 100;
+  width: 85%;
+  margin: 0;
+  color: #979797;
+  background-color: #fff;
+  font-size: 2.4em; }
+
+.tp-ac__item {
+  overflow: hidden;
+  cursor: pointer;
+  padding: 2px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+          font-family: 'Lato';
+          
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+  .tp-ac__item:hover, .tp-ac__item.is-active {
+    background-color: #ddd; }
+  .tp-ac__item.no-results, .tp-ac__item.no-results:hover {
+    cursor: default;
+    background-color: #fff; }
+  .tp-ac__item span {
+    color: #4a4a4a;
+    }
+
+@-webkit-keyframes spinner {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes spinner {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+.spinner:before {
+  position: absolute;
+  top: 50%;
+  right: 0.5em;
+  width: 1em;
+  height: 1em;
+  margin-top: -0.625em;
+  margin-left: -0.625em;
+  content: '';
+  -webkit-animation: spinner 1s linear infinite;
+          animation: spinner 1s linear infinite;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-top-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%; }
+
+/*# sourceMappingURL=teleport-autocomplete.css.map */

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/teleport-autocomplete.css">
+        <link rel="stylesheet" type="text/css" href="css/videoStyle.css">
+        <link rel="stylesheet" type="text/css" href="css/signupStyle.css">
+        <link rel="stylesheet" type="text/css" href="css/checkboxStyle.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    </head>
+    
+    <body>
+        <div class="video-container">
+        <div class="filter"></div>
+        <video id="backgroundVid" autoplay loop class="fillWidth">
+               <!-- video gets randomly selected here -->
+        </video>
+        
+        <div class="cont">
+           
+  <div class="modal">
+      
+    <div class="login">
+      <div ><img alt="logo" src="images/pulse.png"/></div>
+      
+      <div id="thankyou" class="hidden login__form">
+          <svg style="width: 55px;" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+            <circle class="path circle" fill="none" stroke="#73AF55" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
+            <polyline class="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
+            </svg>
+            <p class="success">Thank You!<p> 
+                <p class="secondary">Pulse is an innovative platform designed to get artists music heard. <br>In a way that is unlike anything before.
+               
+      </div>
+      
+      <div id="error" class="hidden login__form">
+        <svg style="width: 55px;" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+          <circle class="path circle" fill="none" stroke="#D06079" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
+          <line class="path line" fill="none" stroke="#D06079" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="34.4" y1="37.9" x2="95.8" y2="92.3"/>
+          <line class="path line" fill="none" stroke="#D06079" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="95.8" y1="38" x2="34.4" y2="92.2"/>
+        </svg>
+        <p class="error">Error<br><br>
+        We seem to be having some issues. Please try again later!</p>
+      </div>
+      
+      
+      <div id="content" class="login__form">
+          <form id="signupForm" method="post">
+        <div class="login__row">
+          <svg class="login__icon name svg svg-icon" viewBox="0 0 20 20">
+        <path fill="none" d="M10,10.9c2.373,0,4.303-1.932,4.303-4.306c0-2.372-1.93-4.302-4.303-4.302S5.696,4.223,5.696,6.594C5.696,8.969,7.627,10.9,10,10.9z M10,3.331c1.801,0,3.266,1.463,3.266,3.263c0,1.802-1.465,3.267-3.266,3.267c-1.8,0-3.265-1.465-3.265-3.267C6.735,4.794,8.2,3.331,10,3.331z"></path>
+	<path fill="none" d="M10,12.503c-4.418,0-7.878,2.058-7.878,4.685c0,0.288,0.231,0.52,0.52,0.52c0.287,0,0.519-0.231,0.519-0.52c0-1.976,3.132-3.646,6.84-3.646c3.707,0,6.838,1.671,6.838,3.646c0,0.288,0.234,0.52,0.521,0.52s0.52-0.231,0.52-0.52C17.879,14.561,14.418,12.503,10,12.503z"></path>          </svg>
+        <input type="text" class="login__input name" id="name"  name="name" placeholder="Full Name" required/>
+        </div>
+          
+        <div class="login__row">
+        <svg class="login__icon pass svg svg-icon" viewBox="0 0 20 20">
+        <path d="M17.051,3.302H2.949c-0.866,0-1.567,0.702-1.567,1.567v10.184c0,0.865,0.701,1.568,1.567,1.568h14.102c0.865,0,1.566-0.703,1.566-1.568V4.869C18.617,4.003,17.916,3.302,17.051,3.302z M17.834,15.053c0,0.434-0.35,0.783-0.783,0.783H2.949c-0.433,0-0.784-0.35-0.784-0.783V4.869c0-0.433,0.351-0.784,0.784-0.784h14.102c0.434,0,0.783,0.351,0.783,0.784V15.053zM15.877,5.362L10,9.179L4.123,5.362C3.941,5.245,3.699,5.296,3.581,5.477C3.463,5.659,3.515,5.901,3.696,6.019L9.61,9.86C9.732,9.939,9.879,9.935,10,9.874c0.121,0.062,0.268,0.065,0.39-0.014l5.915-3.841c0.18-0.118,0.232-0.36,0.115-0.542C16.301,5.296,16.059,5.245,15.877,5.362z"></path>          </svg>
+        <input type="email" class="login__input pass" id="email" name="email" placeholder="Email" required/>
+        </div>
+          
+        <div class="result login__row">
+            
+        <svg class="login__icon pass svg svg-icon" viewBox="0 0 20 20">
+            <path fill="none" d="M10.292,4.229c-1.487,0-2.691,1.205-2.691,2.691s1.205,2.691,2.691,2.691s2.69-1.205,2.69-2.691
+								S11.779,4.229,10.292,4.229z M10.292,8.535c-0.892,0-1.615-0.723-1.615-1.615S9.4,5.306,10.292,5.306
+								c0.891,0,1.614,0.722,1.614,1.614S11.184,8.535,10.292,8.535z M10.292,1C6.725,1,3.834,3.892,3.834,7.458
+								c0,3.567,6.458,10.764,6.458,10.764s6.458-7.196,6.458-10.764C16.75,3.892,13.859,1,10.292,1z M4.91,7.525
+								c0-3.009,2.41-5.449,5.382-5.449c2.971,0,5.381,2.44,5.381,5.449s-5.381,9.082-5.381,9.082S4.91,10.535,4.91,7.525z"></path>      
+        </svg>
+        <input type="text" class="location_input location login__input pass" id="location" name="location" placeholder="Location" required autocomplete="off"/>
+
+        </div>
+              <div class="check">
+                  <input id='one' type='checkbox' name="betaSign" value="1"/>
+                <label for='one'>
+                <span></span>
+                <i style="font-size: .7em;">Sign up for the Beta!</i>
+              </label>
+              </div>
+        <button id="signupButton" type="submit" class="signup_submit">Sign up</button>
+          </form>
+      </div>
+    </div>
+    <div class="app">
+      <div class="app__top">
+        <div class="app__menu-btn">
+          <span></span>
+        </div>
+        <svg class="app__icon search svg-icon" viewBox="0 0 20 20">
+          <path d="M20,20 15.36,15.36 a9,9 0 0,1 -12.72,-12.72 a 9,9 0 0,1 12.72,12.72" />
+        </svg>
+       
+    </div>
+  </div>
+</div>
+        
+      
+        <div id="form_output">
+        </div>
+        </div>
+        </div>
+        <script src="javascript/autocomplete/teleport-autocomplete.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="javascript/index.js"></script>
+    </body>
+</html>

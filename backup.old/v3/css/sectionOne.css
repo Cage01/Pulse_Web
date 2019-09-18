@@ -1,0 +1,325 @@
+/* 
+    Created on : Apr 12, 2017, 10:06:55 PM
+    Author     : Mason
+*/ 
+   svg { 
+    position: absolute;
+    width: 300%;
+      top: 0;
+      left: 0;
+    }
+
+    .title-wrapper {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      top: 0;
+      z-index: 100;
+    }
+
+    h1 {
+      font-size: 76px;
+      color: #eeeeee;
+      position: relative;
+      top: 35%;
+      height: 100px;
+      margin-top: -50px;
+      text-align: center;
+      z-index: 103;
+      font-family: 'DFP Sc Sans Heue30_103', 'Roboto', sans-serif; /*a name to be used later*/
+      src: url('../fonts/regular.ttf'); /*URL to font*/
+      font-weight: 100;
+      text-transform: uppercase;
+      
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+    
+  
+
+.unselectable{
+      -moz-user-select: -moz-none;
+      -khtml-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+
+  .sectionSub{
+        top: 70%;
+        z-index: 110;
+        left: 51%;
+        background: none;
+        border: 1px solid rgba(255, 255, 255, 0.65);
+        border-radius: 12px;
+        color: rgba(255, 255, 255, 0.65);
+        font-size: 19px;
+        font-size: 1.2rem;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-family: 'DFP Sc Sans Heue30_103', 'Roboto', sans-serif;
+        font-weight: 100;
+        line-height: 2.5em;
+        margin-left: 10px;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+    
+    .sectionSub:hover {
+    background: rgba(255, 255, 255, 0.15);
+   /* border: 1px solid linear-gradient(to right, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 25%, rgba(0,255,0,1) 75%, rgba(0,0,255,1) 100%);*/
+    color: #fff;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.subButton{
+        margin-top: 180px; 
+        width: 200px;
+        z-index: 110;
+        left: 51%;
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.65);
+        border-radius: 12px;
+        color: rgba(255, 255, 255, 0.65);
+        font-size: 19px;
+        font-size: 1.2rem;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-family: 'DFP Sc Sans Heue30_103', 'Roboto', sans-serif;
+        font-weight: 100;
+        line-height: 2.5em;
+        margin-left: 10px;
+        
+        -webkit-box-shadow: -5px 10px 32px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: -5px 10px 32px -7px rgba(0,0,0,0.75);
+box-shadow: -5px 10px 32px -7px rgba(0,0,0,0.75);
+        
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+}
+
+.subButton:hover{
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.subButton:active{
+    background: rgba(0,0,0,0.15);
+    -webkit-box-shadow: -5px 10px 32px -7px rgba(0,0,0,0);
+    -moz-box-shadow: -5px 10px 32px -7px rgba(0,0,0,0);
+    box-shadow: -5px 10px 32px -7px rgba(0,0,0,0);
+}
+
+#subscribe.hidden{
+    opacity: 0;
+    
+    margin-top: 200px;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+}
+
+.signup{
+    margin-top: 160px;
+    -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+}
+
+
+ 
+
+
+input.sectionSub{
+    background: rgba(255, 255, 255, 0.15);
+    left: 32%;
+
+    top: 70%;
+    
+}
+
+    h1.hidden {
+      top: 37%;
+      opacity: 0;
+
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+    
+    #mce-EMAIL:hover{
+        cursor: text;
+    }
+    
+    #mc-embedded-subscribe:hover{
+        cursor: pointer;
+    }
+    #subWindow.hidden{
+       top: 12%;
+       opacity: 0;
+
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;  
+}
+
+#mce-EMAIL{
+    -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;  
+}
+
+
+#mce-EMAIL.hidden{
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;  
+    
+}
+    
+    #mc-embedded-subscribe.hidden {
+      top: 75%;
+      opacity: 0;
+
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+
+    h2 {
+      font-size: 25px;
+      color: #eeeeee;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 100;
+      font-style: italic;
+
+      position: relative;
+      top: 25%;
+    
+      height: 100px;
+      margin-top: 25px;
+      text-align: center;
+      z-index: 103;
+
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+    
+    h3{
+      color: #eeeeee;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 100;
+      font-style: italic;
+
+      position: relative;
+      top: 170px;
+    
+      height: 40px;
+      margin-top: 25px;
+      text-align: center;
+      z-index: 103;
+
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+    
+    h3.hidden{
+        top: 190px;
+        opacity: 0;
+
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+
+    h2.hidden {
+      top: 27%;
+      opacity: 0;
+
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+
+    h1 > span {
+      font-weight: 300;
+      color: #a23047;
+    }
+    
+     @media(max-width:550px) {
+    h1 {
+      font-size: 65px;
+    };
+    
+    h3{
+        top: 90px;
+    };
+    .subButton{
+        margin-top: 100px;
+    };
+}
+    
+  
+    label{
+      font-size: 20px;  
+      color: #eeeeee;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 100;
+
+    
+      text-align: center;
+      z-index: 103;
+
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+    
+    svg path {
+      position: absolute;
+      width: 300%;
+      opacity: 0;
+      -webkit-transition: opacity 0.6s ease;
+      -moz-transition: opacity 0.6s ease;
+      -ms-transition: opacity 0.6s ease;
+      -o-transition: opacity 0.6s ease;
+      transition: opacity 0.6s ease;
+    }

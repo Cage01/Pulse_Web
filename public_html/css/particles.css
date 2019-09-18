@@ -1,0 +1,17 @@
+/* 
+    Created on : Apr 12, 2017, 10:58:06 PM
+    Author     : Mason
+*/
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 0;
+}
